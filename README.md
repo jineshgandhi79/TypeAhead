@@ -15,14 +15,22 @@ A production-grade Search Typeahead (autocomplete) application built using the M
 * **Node.js** (v18+) must be installed (only to run the orchestrator script).
 
 ### Steps
-1. Open PowerShell or Command Prompt at the project root (`d:\Projects\TypeAhead`).
-2. Run the start file:
+1. **Clone the Repository**:
+   Open a terminal and clone the repository, then navigate into the project root directory:
+   ```bash
+   git clone https://github.com/jineshgandhi79/TypeAhead.git
+   cd TypeAhead
+   ```
+2. **Download the Dataset**: 
+   - Download the raw Wikipedia titles dataset from [https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-all-titles-in-ns0.gz](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-all-titles-in-ns0.gz).
+   - Extract the downloaded archive, place the file at the root of the project, and rename it `dataset` (without any file extension).
+3. Run the start file:
    ```cmd
    node run.js
    ```
    *(Or run `node run.js` directly).*
-3. This script will run `docker-compose up --build`, spinning up MongoDB, the three Redis nodes, building the backend and frontend containers, running the database preload, and launching the services.
-4. Once running, open your web browser and go to:
+4. This script will run `docker-compose up --build`, spinning up MongoDB, the three Redis nodes, building the backend and frontend containers, running the database preload, and launching the services.
+5. Once running, open your web browser and go to:
    ```
    http://localhost:3000
    ```
