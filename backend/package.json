@@ -1,0 +1,17 @@
+{
+  "name": "typeahead-backend",
+  "version": "1.0.0",
+  "description": "Backend for Search Typeahead System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "preload": "node preload.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.1",
+    "redis": "^4.6.13"
+  }
+}
